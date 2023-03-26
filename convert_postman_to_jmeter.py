@@ -202,7 +202,7 @@ class App:
 
         # 设置备注标签
         self.remark_label = tk.Label(master, text="注:postman至少支持:8.4.0, jmeter至少支持:5.4.1,postman导出json2文件的时候请选择v2.1")
-        self.remark_label.grid(row=5, column=0, pady=10, sticky=tk.S + tk.E + tk.W)
+        self.remark_label.grid(row=5, column=1, pady=10, sticky=tk.S + tk.E + tk.W)
 
 
         # 设置默认文件路径
