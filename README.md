@@ -3,6 +3,8 @@ postman脚本（json）转jmeter脚本（jmx），支持Mac和Windows图形界�
 
 目前仅支持GET和POST请求，如需支持其他请求，可修改代码的转换逻辑和xml模板。
 
+![image](https://user-images.githubusercontent.com/37242294/227765894-86eab7eb-7b6b-4edc-aaf3-8646c072e685.png)
+
 使用方法：
 
 1.postman导出postman_collection.json文件和postman_environment.json文件。
