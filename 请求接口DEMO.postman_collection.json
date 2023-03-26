@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "480e0bf7-b6a5-4f69-ba3f-bf704fcdd3a0",
+		"name": "请求接口DEMO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6601957"
+	},
+	"item": [
+		{
+			"name": "接口DEMO-GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"value": "demoapi.demo.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "demo-token",
+						"value": "a5b5d05b34fbfdbb96a1f5d53ce9f3cb"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-Hans-com;q=1"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.demo.demoapps.com/demo/demo.html"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/3/etp/vvvv/ad/pppp/haha?attid=d35dc54ef0f7f049980b8f9dd2f79216&cdid=12345&langiig=c0d8f6488b68d6e7404821077c102e14&etpid={{demoid}}&uid=aa4fc7c97f9b9b2c35fc54d064c7f0fc",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"3",
+						"etp",
+						"vvvv",
+						"ad",
+						"pppp",
+						"haha"
+					],
+					"query": [
+						{
+							"key": "attid",
+							"value": "d35dc54ef0f7f049980b8f9dd2f79216"
+						},
+						{
+							"key": "cdid",
+							"value": "12345"
+						},
+						{
+							"key": "langiig",
+							"value": "c0d8f6488b68d6e7404821077c102e14"
+						},
+						{
+							"key": "etpid",
+							"value": "{{demoid}}"
+						},
+						{
+							"key": "uid",
+							"value": "aa4fc7c97f9b9b2c35fc54d064c7f0fc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "接口DEMO-POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"hahahahaha\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.data).to.eql(true);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Host",
+						"value": "demoapi.demo.com"
+					},
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "demo-token",
+						"value": "0c4e4d74a60efdb7e6990f3059e7f6c2"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "referer",
+						"value": "https://demo.demo.demoapps.com/demo/demo.html"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"
+					},
+					{
+						"key": "accept-language",
+						"value": "zh-Hans-com;q=1"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"did\":\"d25f1b38c2a55d42b3fbce06f51e779f\",\"cccid\":10,\"didip\":\"{{$timestamp}}\"}"
+				},
+				"url": {
+					"raw": "{{host}}/9/etp/vvvv/ad/pppp/hehe?attid=ae4df6377f9e69d96f2c2d4315390b7c&etpid=d68b26833abf0f9ca7ea8c68c3b3d3c6&uid=a5b5d05b34fbfdbb96a1f5d53ce9f3cb&etpid={{demoid}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"9",
+						"etp",
+						"vvvv",
+						"ad",
+						"pppp",
+						"hehe"
+					],
+					"query": [
+						{
+							"key": "attid",
+							"value": "ae4df6377f9e69d96f2c2d4315390b7c"
+						},
+						{
+							"key": "etpid",
+							"value": "d68b26833abf0f9ca7ea8c68c3b3d3c6"
+						},
+						{
+							"key": "uid",
+							"value": "a5b5d05b34fbfdbb96a1f5d53ce9f3cb"
+						},
+						{
+							"key": "etpid",
+							"value": "{{demoid}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
